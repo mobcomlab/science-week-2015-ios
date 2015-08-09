@@ -153,7 +153,7 @@
                                 <rect key="frame" x="10" y="10" width="580" height="220"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PDl-TC-uos">
-                                        <rect key="frame" x="8" y="8" width="564" height="204"/>
+                                        <rect key="frame" x="10" y="10" width="560" height="200"/>
                                         <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -162,10 +162,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="PDl-TC-uos" secondAttribute="bottom" constant="8" id="0ZZ-rr-7l5"/>
-                                    <constraint firstItem="PDl-TC-uos" firstAttribute="leading" secondItem="CMw-oF-Xy1" secondAttribute="leading" constant="8" id="Wm6-yH-uxv"/>
-                                    <constraint firstAttribute="trailing" secondItem="PDl-TC-uos" secondAttribute="trailing" constant="8" id="bkC-FM-y5b"/>
-                                    <constraint firstItem="PDl-TC-uos" firstAttribute="top" secondItem="CMw-oF-Xy1" secondAttribute="top" constant="8" id="rb5-2J-jMk"/>
+                                    <constraint firstAttribute="bottom" secondItem="PDl-TC-uos" secondAttribute="bottom" constant="10" id="0ZZ-rr-7l5"/>
+                                    <constraint firstItem="PDl-TC-uos" firstAttribute="leading" secondItem="CMw-oF-Xy1" secondAttribute="leading" constant="10" id="Wm6-yH-uxv"/>
+                                    <constraint firstAttribute="trailing" secondItem="PDl-TC-uos" secondAttribute="trailing" constant="10" id="bkC-FM-y5b"/>
+                                    <constraint firstItem="PDl-TC-uos" firstAttribute="top" secondItem="CMw-oF-Xy1" secondAttribute="top" constant="10" id="rb5-2J-jMk"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sM-4y-TVD">
@@ -294,20 +294,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eQm-GS-mQa">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgX-e4-gJO">
                                 <rect key="frame" x="10" y="10" width="580" height="220"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eQm-GS-mQa">
+                                        <rect key="frame" x="10" y="10" width="560" height="200"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="eQm-GS-mQa" secondAttribute="centerY" id="Aio-kt-BzT"/>
+                                    <constraint firstItem="eQm-GS-mQa" firstAttribute="top" secondItem="vgX-e4-gJO" secondAttribute="top" constant="10" id="BP0-yL-tca"/>
+                                    <constraint firstAttribute="bottom" secondItem="eQm-GS-mQa" secondAttribute="bottom" constant="10" id="Cg3-je-6g7"/>
+                                    <constraint firstAttribute="trailing" secondItem="eQm-GS-mQa" secondAttribute="trailing" constant="10" id="E2I-8o-Em0"/>
+                                    <constraint firstAttribute="centerX" secondItem="eQm-GS-mQa" secondAttribute="centerX" id="FMx-Fx-UFR"/>
+                                    <constraint firstItem="eQm-GS-mQa" firstAttribute="leading" secondItem="vgX-e4-gJO" secondAttribute="leading" constant="10" id="Fzy-TC-wjv"/>
+                                    <constraint firstAttribute="height" constant="220" id="sEl-MM-6e4"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="-" translatesAutoresizingMaskIntoConstraints="NO" id="uA8-AW-7mr">
+                                <rect key="frame" x="10" y="280" width="580" height="250"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="คำอธิบาย" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ae-yn-SJf">
+                                <rect key="frame" x="266" y="245" width="69" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="hqz-Xx-HIm"/>
+                                    <constraint firstAttribute="height" constant="21" id="qv6-mz-CJX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="eQm-GS-mQa" secondAttribute="trailing" constant="-6" id="9jp-Gi-44z"/>
-                            <constraint firstItem="eQm-GS-mQa" firstAttribute="leading" secondItem="tzQ-HE-QhU" secondAttribute="leadingMargin" constant="-6" id="bpk-an-SVr"/>
-                            <constraint firstItem="eQm-GS-mQa" firstAttribute="top" secondItem="GAN-AU-Sah" secondAttribute="bottom" constant="10" id="jbC-EY-Ped"/>
-                            <constraint firstItem="Jia-fq-gHb" firstAttribute="top" secondItem="eQm-GS-mQa" secondAttribute="bottom" constant="306" id="sY3-3Z-bNr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vgX-e4-gJO" secondAttribute="trailing" constant="-6" id="04G-Hl-hdC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uA8-AW-7mr" secondAttribute="trailing" constant="-6" id="0n5-FS-tdo"/>
+                            <constraint firstAttribute="centerX" secondItem="3ae-yn-SJf" secondAttribute="centerX" constant="-0.5" id="9zJ-pA-SgV"/>
+                            <constraint firstItem="3ae-yn-SJf" firstAttribute="top" secondItem="vgX-e4-gJO" secondAttribute="bottom" constant="15" id="Cop-dD-Gnf"/>
+                            <constraint firstItem="vgX-e4-gJO" firstAttribute="leading" secondItem="tzQ-HE-QhU" secondAttribute="leadingMargin" constant="-6" id="Hud-ZG-h6O"/>
+                            <constraint firstItem="vgX-e4-gJO" firstAttribute="top" secondItem="GAN-AU-Sah" secondAttribute="bottom" constant="10" id="M1W-V7-x3c"/>
+                            <constraint firstItem="uA8-AW-7mr" firstAttribute="leading" secondItem="tzQ-HE-QhU" secondAttribute="leadingMargin" constant="-6" id="T3V-4Q-U2c"/>
+                            <constraint firstItem="uA8-AW-7mr" firstAttribute="top" secondItem="3ae-yn-SJf" secondAttribute="bottom" constant="14" id="TPw-ns-uDz"/>
+                            <constraint firstItem="Jia-fq-gHb" firstAttribute="top" secondItem="uA8-AW-7mr" secondAttribute="bottom" constant="6" id="ZMz-ir-ey6"/>
+                            <constraint firstAttribute="centerY" secondItem="3ae-yn-SJf" secondAttribute="centerY" constant="12.5" id="xdp-1h-7hp"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xdp-1h-7hp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="descriptionTextView" destination="uA8-AW-7mr" id="3GC-R4-Vde"/>
                         <outlet property="qrPreview" destination="eQm-GS-mQa" id="J6V-8J-KXn"/>
                     </connections>
                 </viewController>

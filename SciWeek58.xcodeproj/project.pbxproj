@@ -11,9 +11,6 @@
 		A933114E1B72FA240010B9E3 /* IBeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933114D1B72FA240010B9E3 /* IBeaconViewController.swift */; };
 		A93311501B72FA350010B9E3 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933114F1B72FA350010B9E3 /* QRViewController.swift */; };
 		A93311521B7300980010B9E3 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93311511B7300980010B9E3 /* QuestionViewController.swift */; };
-		A93311561B730B290010B9E3 /* QuestType1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A93311531B730B290010B9E3 /* QuestType1@3x.png */; };
-		A93311571B730B290010B9E3 /* QuestType2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A93311541B730B290010B9E3 /* QuestType2@3x.png */; };
-		A93311581B730B290010B9E3 /* QuestType3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A93311551B730B290010B9E3 /* QuestType3@3x.png */; };
 		A933115A1B7342FB0010B9E3 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A93311591B7342FB0010B9E3 /* AppIcon.png */; };
 		A934E1651B6726480088B64C /* QuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E1641B6726480088B64C /* QuestViewController.swift */; };
 		A934E1711B6741E30088B64C /* QuestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A934E1701B6741E30088B64C /* QuestCell.swift */; };
@@ -23,6 +20,12 @@
 		A95C6F751B68AA58003EDBC3 /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C6F741B68AA58003EDBC3 /* Quest.swift */; };
 		A95C6F7E1B68B9B5003EDBC3 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C6F7D1B68B9B5003EDBC3 /* DatabaseManager.swift */; };
 		A95C6F801B68C156003EDBC3 /* RealmExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95C6F7F1B68C156003EDBC3 /* RealmExtensions.swift */; };
+		A96467E91B77422500B4EC69 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96467E81B77422500B4EC69 /* UIColorExtension.swift */; };
+		A96467EF1B77426D00B4EC69 /* beacon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A96467EA1B77426D00B4EC69 /* beacon@3x.png */; };
+		A96467F01B77426D00B4EC69 /* math@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A96467EB1B77426D00B4EC69 /* math@3x.png */; };
+		A96467F11B77426D00B4EC69 /* maze@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A96467EC1B77426D00B4EC69 /* maze@3x.png */; };
+		A96467F21B77426D00B4EC69 /* qr@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A96467ED1B77426D00B4EC69 /* qr@3x.png */; };
+		A96467F31B77426D00B4EC69 /* quest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A96467EE1B77426D00B4EC69 /* quest@3x.png */; };
 		A96515521B76388800277CD2 /* BProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96515511B76388800277CD2 /* BProgressHUD.swift */; };
 		A966228E1B6791CC00C664DC /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A966228D1B6791CC00C664DC /* WebServiceManager.swift */; };
 		A98BDA861B748C170022568A /* PassedIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A98BDA851B748C170022568A /* PassedIcon@3x.png */; };
@@ -51,9 +54,6 @@
 		A933114D1B72FA240010B9E3 /* IBeaconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBeaconViewController.swift; sourceTree = "<group>"; };
 		A933114F1B72FA350010B9E3 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		A93311511B7300980010B9E3 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
-		A93311531B730B290010B9E3 /* QuestType1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QuestType1@3x.png"; sourceTree = "<group>"; };
-		A93311541B730B290010B9E3 /* QuestType2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QuestType2@3x.png"; sourceTree = "<group>"; };
-		A93311551B730B290010B9E3 /* QuestType3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QuestType3@3x.png"; sourceTree = "<group>"; };
 		A93311591B7342FB0010B9E3 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		A934E1641B6726480088B64C /* QuestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestViewController.swift; sourceTree = "<group>"; };
 		A934E1701B6741E30088B64C /* QuestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestCell.swift; sourceTree = "<group>"; };
@@ -63,6 +63,12 @@
 		A95C6F741B68AA58003EDBC3 /* Quest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
 		A95C6F7D1B68B9B5003EDBC3 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		A95C6F7F1B68C156003EDBC3 /* RealmExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmExtensions.swift; sourceTree = "<group>"; };
+		A96467E81B77422500B4EC69 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A96467EA1B77426D00B4EC69 /* beacon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "beacon@3x.png"; sourceTree = "<group>"; };
+		A96467EB1B77426D00B4EC69 /* math@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "math@3x.png"; sourceTree = "<group>"; };
+		A96467EC1B77426D00B4EC69 /* maze@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maze@3x.png"; sourceTree = "<group>"; };
+		A96467ED1B77426D00B4EC69 /* qr@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr@3x.png"; sourceTree = "<group>"; };
+		A96467EE1B77426D00B4EC69 /* quest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quest@3x.png"; sourceTree = "<group>"; };
 		A96515511B76388800277CD2 /* BProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BProgressHUD.swift; sourceTree = "<group>"; };
 		A966228D1B6791CC00C664DC /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 		A98BDA851B748C170022568A /* PassedIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PassedIcon@3x.png"; sourceTree = "<group>"; };
@@ -161,9 +167,11 @@
 		A934E17E1B677A970088B64C /* image */ = {
 			isa = PBXGroup;
 			children = (
-				A93311531B730B290010B9E3 /* QuestType1@3x.png */,
-				A93311541B730B290010B9E3 /* QuestType2@3x.png */,
-				A93311551B730B290010B9E3 /* QuestType3@3x.png */,
+				A96467EA1B77426D00B4EC69 /* beacon@3x.png */,
+				A96467EB1B77426D00B4EC69 /* math@3x.png */,
+				A96467EC1B77426D00B4EC69 /* maze@3x.png */,
+				A96467ED1B77426D00B4EC69 /* qr@3x.png */,
+				A96467EE1B77426D00B4EC69 /* quest@3x.png */,
 				A93311591B7342FB0010B9E3 /* AppIcon.png */,
 				A98BDA851B748C170022568A /* PassedIcon@3x.png */,
 			);
@@ -211,6 +219,7 @@
 		A99966861B662E23008F752B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A96467E81B77422500B4EC69 /* UIColorExtension.swift */,
 				A96515511B76388800277CD2 /* BProgressHUD.swift */,
 				A98BDA871B749E6A0022568A /* DOAlertController.swift */,
 				A95C6F7F1B68C156003EDBC3 /* RealmExtensions.swift */,
@@ -325,13 +334,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96467F31B77426D00B4EC69 /* quest@3x.png in Resources */,
 				A98BDA861B748C170022568A /* PassedIcon@3x.png in Resources */,
-				A93311581B730B290010B9E3 /* QuestType3@3x.png in Resources */,
-				A93311561B730B290010B9E3 /* QuestType1@3x.png in Resources */,
+				A96467EF1B77426D00B4EC69 /* beacon@3x.png in Resources */,
 				A999668E1B662E23008F752B /* Main.storyboard in Resources */,
-				A93311571B730B290010B9E3 /* QuestType2@3x.png in Resources */,
 				A99966931B662E23008F752B /* LaunchScreen.xib in Resources */,
 				A99966901B662E23008F752B /* Images.xcassets in Resources */,
+				A96467F21B77426D00B4EC69 /* qr@3x.png in Resources */,
+				A96467F01B77426D00B4EC69 /* math@3x.png in Resources */,
+				A96467F11B77426D00B4EC69 /* maze@3x.png in Resources */,
 				A933115A1B7342FB0010B9E3 /* AppIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +465,7 @@
 				A934E1651B6726480088B64C /* QuestViewController.swift in Sources */,
 				A934E1791B6761C60088B64C /* Style.swift in Sources */,
 				A934E17D1B6776F40088B64C /* HidingViewController.swift in Sources */,
+				A96467E91B77422500B4EC69 /* UIColorExtension.swift in Sources */,
 				A96515521B76388800277CD2 /* BProgressHUD.swift in Sources */,
 				A98BDA881B749E6A0022568A /* DOAlertController.swift in Sources */,
 				A95C6F7E1B68B9B5003EDBC3 /* DatabaseManager.swift in Sources */,
