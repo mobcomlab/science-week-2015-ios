@@ -16,8 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        var navigationBarAppearace = UINavigationBar.appearance()
+        
+        navigationBarAppearace.tintColor = UIColor.whiteColor()
+        navigationBarAppearace.barTintColor = Style.ColorMain
+        
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         
         return true
+    }
+    
+    func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> Int {
+        
+        return Int(UIInterfaceOrientationMask.Portrait.rawValue)
     }
 
     func applicationWillResignActive(application: UIApplication) {
