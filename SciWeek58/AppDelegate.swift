@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        setSchemaVersion(1, Realm.defaultPath, { migration, oldSchemaVersion in
+            if oldSchemaVersion < 1 {
+                
+                migration.enumerate(Quest.className()) { oldObject, newObject in
+                    
+                    newObject!["icon"] = ""
+                    newObject!["color"] = ""
+                }
+            }
+        })
         
         var navigationBarAppearace = UINavigationBar.appearance()
         

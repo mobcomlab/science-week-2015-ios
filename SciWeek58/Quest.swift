@@ -16,6 +16,8 @@ class Quest: Object {
     dynamic var answer = ""
     dynamic var other = ""
     dynamic var title = ""
+    dynamic var icon = ""
+    dynamic var color = ""
     dynamic var status = 0
     
     override static func primaryKey() -> String? {

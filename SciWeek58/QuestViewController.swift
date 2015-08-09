@@ -207,8 +207,7 @@ class QuestViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         let quest = quests![indexPath.row]
         
-        cell.circleView.layer.cornerRadius = cell.circleView.frame.size.width/2
-        cell.questImage.image = UIImage(named: "QuestType\(quest.type)")
+        cell.circleView.layer.cornerRadius = (gridSize-20)/2
         cell.setGrid(quest)
         
         
