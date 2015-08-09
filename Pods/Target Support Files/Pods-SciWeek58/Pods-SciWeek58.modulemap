@@ -1,6 +1,0 @@
-framework module Pods_SciWeek58 {
-  umbrella header "Pods-SciWeek58-umbrella.h"
-
-  export *
-  module * { export * }
-}
