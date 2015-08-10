@@ -11,11 +11,7 @@ import UIKit
 class Style {
     
     // #00BCD4
-    static let ColorMain = UIColor(red: 16/255, green: 72/255, blue: 91/255, alpha: 1.0)
-    
-    static let ColorGray = UIColor(red: 0/255, green: 150/255, blue: 136/255, alpha: 1.0)
-    static let ColorGreen = UIColor(red: 0/255, green: 255/255, blue: 0/255, alpha: 1.0)
-    static let ColorBlue = UIColor(red: 0/255, green: 192/255.0, blue: 255/255, alpha: 1.0)
+    static let ColorMain = UIColor(red: 244/255, green: 66/255, blue: 54/255, alpha: 1.0)
     
     enum UIUserInterfaceIdiom : Int
     {
