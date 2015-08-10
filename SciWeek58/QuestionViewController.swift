@@ -40,6 +40,7 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = self.quest?.title
         
+        setFont()
         clearText()
         self.startQuest()
     }
@@ -190,7 +191,8 @@ class QuestionViewController: UIViewController {
         headView.layer.cornerRadius = 4.0
         
         let headLabel = UILabel(frame: CGRectMake(5, 5, 270, 30))
-        headLabel.text = "ว๊าววว ได้ตั้ง \(points) ตะแนน"
+        let title = passed ? "คุณได้ \(points)/\(arrayQuestionsGroup!.count) คะแนน ผ่านภารกิจ" : "คุณได้ \(points)/\(arrayQuestionsGroup!.count) คะแนน ไม่ผ่านภารกิจ"
+        headLabel.text = title
         headLabel.textColor = UIColor.whiteColor()
         headLabel.font = UIFont.systemFontOfSize(20)
         headLabel.textAlignment = .Center
@@ -198,9 +200,20 @@ class QuestionViewController: UIViewController {
         headView.addSubview(headLabel)
         popupView.addSubview(headView)
         
-        let iconView = UIImageView(image: UIImage(named: "AppIcon"))
+        let iconColorView = UIView(frame: CGRectMake(10, 60, 280, 280))
+        iconColorView.backgroundColor = UIColor(rgba: self.quest!.color)
+        iconColorView.layer.cornerRadius = 140
+        popupView.addSubview(iconColorView)
+        
+        let iconView = UIImageView(image: UIImage(named: self.quest!.icon))
         iconView.frame = CGRectMake(10, 60, 280, 280)
         popupView.addSubview(iconView)
+        
+        if passed {
+            let iconPassedView = UIImageView(image: UIImage(named: "PassedIcon"))
+            iconPassedView.frame = CGRectMake(20, 70, 260, 260)
+            popupView.addSubview(iconPassedView)
+        }
         
         // Replay button
         let replayButton = UIButton.buttonWithType(.System) as! UIButton
@@ -240,6 +253,18 @@ class QuestionViewController: UIViewController {
         passed = false
         self.startQuest()
         dismissPopupView()
+    }
+    
+    func setFont() {
+        
+        if Style.DeviceType.IS_IPAD {
+            
+            questionLabel.font = UIFont.systemFontOfSize(40)
+            self.button1.titleLabel!.font = UIFont.systemFontOfSize(40)
+            self.button2.titleLabel!.font = UIFont.systemFontOfSize(40)
+            self.button3.titleLabel!.font = UIFont.systemFontOfSize(40)
+            self.button4.titleLabel!.font = UIFont.systemFontOfSize(40)
+        }
     }
     
     func clearText() {

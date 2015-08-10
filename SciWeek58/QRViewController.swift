@@ -27,6 +27,7 @@ class QRViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = self.quest?.text
         
+        self.setFont()
         self.startQuest()
     }
     
@@ -123,9 +124,20 @@ class QRViewController: UIViewController {
         headView.addSubview(headLabel)
         popupView.addSubview(headView)
         
-        let iconView = UIImageView(image: UIImage(named: "AppIcon"))
+        let iconColorView = UIView(frame: CGRectMake(10, 60, 280, 280))
+        iconColorView.backgroundColor = UIColor(rgba: self.quest!.color)
+        iconColorView.layer.cornerRadius = 140
+        popupView.addSubview(iconColorView)
+        
+        let iconView = UIImageView(image: UIImage(named: self.quest!.icon))
         iconView.frame = CGRectMake(10, 60, 280, 280)
         popupView.addSubview(iconView)
+        
+        if passed {
+            let iconPassedView = UIImageView(image: UIImage(named: "PassedIcon"))
+            iconPassedView.frame = CGRectMake(20, 70, 260, 260)
+            popupView.addSubview(iconPassedView)
+        }
         
         // Close button
         let closeButton = UIButton.buttonWithType(.System) as! UIButton
@@ -138,6 +150,12 @@ class QRViewController: UIViewController {
         popupView.addSubview(closeButton)
         
         return popupView
+    }
+    
+    func setFont() {
+        if Style.DeviceType.IS_IPAD {
+            self.descriptionTextView.font = UIFont.systemFontOfSize(24)
+        }
     }
     
     func updatePoints() {

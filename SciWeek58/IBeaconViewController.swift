@@ -13,9 +13,14 @@ import CoreBluetooth
 import RealmSwift
 import STZPopupView
 import BProgressHUD
+import CCMRadarView
 
 class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLocationManagerDelegate {
     
+    @IBOutlet var radar: CCMRadarView!
+    @IBOutlet var descriptionTextView: UITextView!
+    @IBOutlet var textStatus: UILabel!
+    @IBOutlet var colorStatus: UIView!
     var locationManager: CLLocationManager!
     var bluetoothPeripheralManager: CBPeripheralManager!
     var isBroadcasting = false
@@ -34,9 +39,16 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
         super.viewDidLoad()
         self.navigationItem.title = self.quest?.text
         
+        self.colorStatus.layer.cornerRadius = self.colorStatus.frame.size.width/2
+        self.textStatus.layer.cornerRadius = self.textStatus.frame.size.width/2
+        self.colorStatus.layer.masksToBounds = true
+        self.textStatus.layer.masksToBounds = true
+        self.colorStatus.backgroundColor = UIColor.grayColor()
+        self.textStatus.text = String(format: "")
+        self.setFont()
+        
         locationManager = CLLocationManager()
         locationManager.delegate = self
-        
         bluetoothPeripheralManager = CBPeripheralManager(delegate: self, queue: nil, options: nil)
     }
     
@@ -61,7 +73,11 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
     }
     
     func configureView() {
+        radar.startAnimation()
         
+        let aString: String = self.quest!.other
+        let newString = aString.stringByReplacingOccurrencesOfString(",", withString: "\n")
+        self.descriptionTextView.text = newString
     }
     
     func startScanning() {
@@ -74,7 +90,7 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
     }
     
     func stopScanning() {
-        
+        radar.stopAnimation()
         let uuid = NSUUID(UUIDString: beaconUuid)
         let beaconRegion = CLBeaconRegion(proximityUUID: uuid, major: beaconMajor, minor: beaconMinor, identifier:beaconUniqId)
         
@@ -86,32 +102,33 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
         
         if beacons.count > 0 {
             let beacon = beacons[0] as! CLBeacon
-            if Double(beacon.accuracy) <= distance {
+            if Double(beacon.accuracy) <= distance && !passed{
                 self.checkedInSuccess()
             }
-            println(CGFloat(beacon.accuracy))
-            updateDistance(beacon.proximity)
+            updateDistance(beacon.proximity, acc: Double(beacon.accuracy))
         } else {
-            updateDistance(.Unknown)
+            
+            updateDistance(CLProximity.Unknown, acc: 0.0)
         }
     }
     
-    func updateDistance(distance: CLProximity) {
-        UIView.animateWithDuration(0.8) { [unowned self] in
+    func updateDistance(distance: CLProximity, acc: Double) {
+        UIView.animateWithDuration(0.8, animations: { () -> Void in
             switch distance {
             case .Unknown:
-                self.view.backgroundColor = UIColor.grayColor()
-                
+                self.colorStatus.backgroundColor = UIColor.grayColor()
+                self.textStatus.text = String(format: "Searching...")
             case .Far:
-                self.view.backgroundColor = UIColor.blueColor()
-                
+                self.colorStatus.backgroundColor = UIColor.redColor()
+                self.textStatus.text = String(format: "%.2f m", acc)
             case .Near:
-                self.view.backgroundColor = UIColor.orangeColor()
-                
+                self.colorStatus.backgroundColor = UIColor.orangeColor()
+                self.textStatus.text = String(format: "%.2f m", acc)
             case .Immediate:
-                self.view.backgroundColor = UIColor.redColor()
+                self.colorStatus.backgroundColor = UIColor.greenColor()
+                self.textStatus.text = String(format: "%.2f m", acc)
             }
-        }
+        })
     }
     
     // MARK: CBPeripheralManagerDelegate method implementation
@@ -170,9 +187,20 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
         headView.addSubview(headLabel)
         popupView.addSubview(headView)
         
-        let iconView = UIImageView(image: UIImage(named: "AppIcon"))
+        let iconColorView = UIView(frame: CGRectMake(10, 60, 280, 280))
+        iconColorView.backgroundColor = UIColor(rgba: self.quest!.color)
+        iconColorView.layer.cornerRadius = 140
+        popupView.addSubview(iconColorView)
+        
+        let iconView = UIImageView(image: UIImage(named: self.quest!.icon))
         iconView.frame = CGRectMake(10, 60, 280, 280)
         popupView.addSubview(iconView)
+        
+        if passed {
+            let iconPassedView = UIImageView(image: UIImage(named: "PassedIcon"))
+            iconPassedView.frame = CGRectMake(20, 70, 260, 260)
+            popupView.addSubview(iconPassedView)
+        }
         
         // Close button
         let closeButton = UIButton.buttonWithType(.System) as! UIButton
@@ -190,6 +218,7 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
     func checkedInSuccess() {
         
         passed = true
+        self.stopScanning()
         let popupView = createPopupview()
         
         let popupConfig = STZPopupViewConfig()
@@ -254,8 +283,10 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
         dismissPopupView()
     }
     
-    func clearText() {
-        //self.descriptionTextView.text = ""
+    func setFont() {
+        if Style.DeviceType.IS_IPAD {
+            self.descriptionTextView.font = UIFont.systemFontOfSize(24)
+        }
     }
     
     func done() {

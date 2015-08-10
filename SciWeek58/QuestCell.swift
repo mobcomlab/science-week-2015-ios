@@ -17,6 +17,10 @@ class QuestCell: UICollectionViewCell {
     
     func setGrid(quest: Quest) {
         
+        if Style.DeviceType.IS_IPAD {
+            self.backgroundColor = UIColor.clearColor()
+            titleLabel.font = UIFont.systemFontOfSize(30)
+        }
         questImage.image = UIImage(named: quest.icon)
         circleView.backgroundColor = UIColor(rgba: quest.color)
         passedImage.hidden = true

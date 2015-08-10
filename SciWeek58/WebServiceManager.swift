@@ -11,8 +11,8 @@ import RealmSwift
 
 class WebServiceManager {
     
-    //static let baseURLString = "http://localhost:8888/api/"
-    static let baseURLString = "http://10.31.26.37:8888/api/"
+    static let baseURLString = "http://localhost:8888/api/"
+    //static let baseURLString = "http://10.31.26.37:8888/api/"
     //static let baseURLString = "http://192.168.1.28:8888/api/"
     
     static func requestQuests(completion: ((NSError?) -> ())) {
