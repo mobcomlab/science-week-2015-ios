@@ -7,6 +7,7 @@ target :SciWeek58 do
    	pod 'Alamofire', '~> 1.3'
     pod 'SwiftQRCode', '~> 1.0'
     pod 'STZPopupView', '~> 1.0'
+    pod 'CCMRadarView', '~> 1.0'
     pod 'KontaktSDK'
 end
 
