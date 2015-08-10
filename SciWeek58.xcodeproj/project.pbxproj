@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A6FF8F83B7B980FA3A335CBA /* Pods_SciWeek58.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C39AE796A5C988015EBE9A /* Pods_SciWeek58.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A92CDAA61B78C57200D20998 /* mobcom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A92CDAA51B78C57200D20998 /* mobcom@3x.png */; };
 		A933114E1B72FA240010B9E3 /* IBeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933114D1B72FA240010B9E3 /* IBeaconViewController.swift */; };
 		A93311501B72FA350010B9E3 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933114F1B72FA350010B9E3 /* QRViewController.swift */; };
 		A93311521B7300980010B9E3 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93311511B7300980010B9E3 /* QuestionViewController.swift */; };
@@ -28,6 +29,9 @@
 		A96467F31B77426D00B4EC69 /* quest@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A96467EE1B77426D00B4EC69 /* quest@3x.png */; };
 		A96515521B76388800277CD2 /* BProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96515511B76388800277CD2 /* BProgressHUD.swift */; };
 		A966228E1B6791CC00C664DC /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A966228D1B6791CC00C664DC /* WebServiceManager.swift */; };
+		A97352E31B786D5D005E5CA6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97352E01B786D5D005E5CA6 /* CoreBluetooth.framework */; };
+		A97352E41B786D5D005E5CA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97352E11B786D5D005E5CA6 /* CoreLocation.framework */; };
+		A97352E51B786D5D005E5CA6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97352E21B786D5D005E5CA6 /* QuartzCore.framework */; };
 		A98BDA861B748C170022568A /* PassedIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A98BDA851B748C170022568A /* PassedIcon@3x.png */; };
 		A98BDA881B749E6A0022568A /* DOAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98BDA871B749E6A0022568A /* DOAlertController.swift */; };
 		A99966891B662E23008F752B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99966881B662E23008F752B /* AppDelegate.swift */; };
@@ -51,6 +55,7 @@
 /* Begin PBXFileReference section */
 		20C39AE796A5C988015EBE9A /* Pods_SciWeek58.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SciWeek58.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		836C7FC927AB3F465AA57E1C /* Pods-SciWeek58.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SciWeek58.release.xcconfig"; path = "Pods/Target Support Files/Pods-SciWeek58/Pods-SciWeek58.release.xcconfig"; sourceTree = "<group>"; };
+		A92CDAA51B78C57200D20998 /* mobcom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mobcom@3x.png"; path = "../../../File/SciWeek58/Image/A/normal/mobcom@3x.png"; sourceTree = "<group>"; };
 		A933114D1B72FA240010B9E3 /* IBeaconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBeaconViewController.swift; sourceTree = "<group>"; };
 		A933114F1B72FA350010B9E3 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		A93311511B7300980010B9E3 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -69,8 +74,12 @@
 		A96467EC1B77426D00B4EC69 /* maze@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maze@3x.png"; sourceTree = "<group>"; };
 		A96467ED1B77426D00B4EC69 /* qr@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr@3x.png"; sourceTree = "<group>"; };
 		A96467EE1B77426D00B4EC69 /* quest@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quest@3x.png"; sourceTree = "<group>"; };
+		A96468371B776B3A00B4EC69 /* SciWeek58-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SciWeek58-Bridging-Header.h"; sourceTree = "<group>"; };
 		A96515511B76388800277CD2 /* BProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BProgressHUD.swift; sourceTree = "<group>"; };
 		A966228D1B6791CC00C664DC /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		A97352E01B786D5D005E5CA6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A97352E11B786D5D005E5CA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A97352E21B786D5D005E5CA6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A98BDA851B748C170022568A /* PassedIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PassedIcon@3x.png"; sourceTree = "<group>"; };
 		A98BDA871B749E6A0022568A /* DOAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOAlertController.swift; sourceTree = "<group>"; };
 		A99966831B662E23008F752B /* SciWeek58.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciWeek58.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +102,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A97352E31B786D5D005E5CA6 /* CoreBluetooth.framework in Frameworks */,
+				A97352E41B786D5D005E5CA6 /* CoreLocation.framework in Frameworks */,
+				A97352E51B786D5D005E5CA6 /* QuartzCore.framework in Frameworks */,
 				A6FF8F83B7B980FA3A335CBA /* Pods_SciWeek58.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +134,9 @@
 		97B0424CA7A21FAE34F1C903 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A97352E01B786D5D005E5CA6 /* CoreBluetooth.framework */,
+				A97352E11B786D5D005E5CA6 /* CoreLocation.framework */,
+				A97352E21B786D5D005E5CA6 /* QuartzCore.framework */,
 				20C39AE796A5C988015EBE9A /* Pods_SciWeek58.framework */,
 				AC82B57C00939AB3C998F0DF /* Pods_SciWeek58Tests.framework */,
 			);
@@ -167,6 +182,7 @@
 		A934E17E1B677A970088B64C /* image */ = {
 			isa = PBXGroup;
 			children = (
+				A92CDAA51B78C57200D20998 /* mobcom@3x.png */,
 				A96467EA1B77426D00B4EC69 /* beacon@3x.png */,
 				A96467EB1B77426D00B4EC69 /* math@3x.png */,
 				A96467EC1B77426D00B4EC69 /* maze@3x.png */,
@@ -226,6 +242,7 @@
 				A934E17A1B6776F40088B64C /* HidingNavigationBarManager.swift */,
 				A934E17B1B6776F40088B64C /* HidingViewController.swift */,
 				A99966871B662E23008F752B /* Info.plist */,
+				A96468371B776B3A00B4EC69 /* SciWeek58-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -335,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A96467F31B77426D00B4EC69 /* quest@3x.png in Resources */,
+				A92CDAA61B78C57200D20998 /* mobcom@3x.png in Resources */,
 				A98BDA861B748C170022568A /* PassedIcon@3x.png in Resources */,
 				A96467EF1B77426D00B4EC69 /* beacon@3x.png in Resources */,
 				A999668E1B662E23008F752B /* Main.storyboard in Resources */,
@@ -604,6 +622,11 @@
 				INFOPLIST_FILE = SciWeek58/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SciWeek58",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SciWeek58/SciWeek58-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -620,6 +643,11 @@
 				INFOPLIST_FILE = SciWeek58/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SciWeek58",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SciWeek58/SciWeek58-Bridging-Header.h";
 			};

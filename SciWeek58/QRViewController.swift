@@ -25,7 +25,7 @@ class QRViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = self.quest?.title
+        self.navigationItem.title = self.quest?.text
         
         self.startQuest()
     }

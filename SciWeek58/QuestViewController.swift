@@ -216,9 +216,10 @@ class QuestViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        hidingNavBarManager?.shouldScrollToTop()
         var questViewController = UIViewController()
         let quest = quests![indexPath.row]
-        println(indexPath.row)
+        println(quest.answer)
         
         if quest.type == 1 {
             questViewController = self.storyboard?.instantiateViewControllerWithIdentifier("QuestionViewController") as! UIViewController
