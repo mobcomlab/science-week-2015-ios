@@ -10,7 +10,6 @@ import UIKit
 import RealmSwift
 import SwiftQRCode
 import STZPopupView
-import BProgressHUD
 
 class QRViewController: UIViewController {
 
