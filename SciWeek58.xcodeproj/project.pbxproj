@@ -18,6 +18,7 @@
 		A916947D1B79A98F00558C9D /* mcl_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A916947B1B79A98F00558C9D /* mcl_logo@3x.png */; };
 		A91694811B79CE8800558C9D /* QuestHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91694801B79CE8800558C9D /* QuestHeaderView.swift */; };
 		A91694831B79D50600558C9D /* mobcom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A91694821B79D50600558C9D /* mobcom@3x.png */; };
+		A91694851B79F46100558C9D /* PassedIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A91694841B79F46100558C9D /* PassedIcon@3x.png */; };
 		A933114E1B72FA240010B9E3 /* IBeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933114D1B72FA240010B9E3 /* IBeaconViewController.swift */; };
 		A93311501B72FA350010B9E3 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933114F1B72FA350010B9E3 /* QRViewController.swift */; };
 		A93311521B7300980010B9E3 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93311511B7300980010B9E3 /* QuestionViewController.swift */; };
@@ -41,7 +42,6 @@
 		A97352E31B786D5D005E5CA6 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97352E01B786D5D005E5CA6 /* CoreBluetooth.framework */; };
 		A97352E41B786D5D005E5CA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97352E11B786D5D005E5CA6 /* CoreLocation.framework */; };
 		A97352E51B786D5D005E5CA6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97352E21B786D5D005E5CA6 /* QuartzCore.framework */; };
-		A98BDA861B748C170022568A /* PassedIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A98BDA851B748C170022568A /* PassedIcon@3x.png */; };
 		A98BDA881B749E6A0022568A /* DOAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98BDA871B749E6A0022568A /* DOAlertController.swift */; };
 		A99966891B662E23008F752B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99966881B662E23008F752B /* AppDelegate.swift */; };
 		A999668E1B662E23008F752B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A999668C1B662E23008F752B /* Main.storyboard */; };
@@ -77,6 +77,7 @@
 		A916947B1B79A98F00558C9D /* mcl_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mcl_logo@3x.png"; sourceTree = "<group>"; };
 		A91694801B79CE8800558C9D /* QuestHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestHeaderView.swift; sourceTree = "<group>"; };
 		A91694821B79D50600558C9D /* mobcom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobcom@3x.png"; sourceTree = "<group>"; };
+		A91694841B79F46100558C9D /* PassedIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PassedIcon@3x.png"; sourceTree = "<group>"; };
 		A933114D1B72FA240010B9E3 /* IBeaconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBeaconViewController.swift; sourceTree = "<group>"; };
 		A933114F1B72FA350010B9E3 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		A93311511B7300980010B9E3 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +102,6 @@
 		A97352E01B786D5D005E5CA6 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		A97352E11B786D5D005E5CA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A97352E21B786D5D005E5CA6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		A98BDA851B748C170022568A /* PassedIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PassedIcon@3x.png"; sourceTree = "<group>"; };
 		A98BDA871B749E6A0022568A /* DOAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOAlertController.swift; sourceTree = "<group>"; };
 		A99966831B662E23008F752B /* SciWeek58.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciWeek58.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99966871B662E23008F752B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 				A96467ED1B77426D00B4EC69 /* qr@3x.png */,
 				A96467EE1B77426D00B4EC69 /* quest@3x.png */,
 				A93311591B7342FB0010B9E3 /* AppIcon.png */,
-				A98BDA851B748C170022568A /* PassedIcon@3x.png */,
+				A91694841B79F46100558C9D /* PassedIcon@3x.png */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -389,7 +389,6 @@
 			files = (
 				A96467F31B77426D00B4EC69 /* quest@3x.png in Resources */,
 				A902B7B71B794AD300591024 /* BottomBG@3x.png in Resources */,
-				A98BDA861B748C170022568A /* PassedIcon@3x.png in Resources */,
 				A96467EF1B77426D00B4EC69 /* beacon@3x.png in Resources */,
 				A916947D1B79A98F00558C9D /* mcl_logo@3x.png in Resources */,
 				A902B7B81B794AD300591024 /* QRFrame@3x.png in Resources */,
@@ -400,6 +399,7 @@
 				A99966931B662E23008F752B /* LaunchScreen.xib in Resources */,
 				A99966901B662E23008F752B /* Images.xcassets in Resources */,
 				A902B7BA1B794DAF00591024 /* BGChoice@3x.png in Resources */,
+				A91694851B79F46100558C9D /* PassedIcon@3x.png in Resources */,
 				A96467F21B77426D00B4EC69 /* qr@3x.png in Resources */,
 				A902B7BE1B79536A00591024 /* LaunchScreen@3x.png in Resources */,
 				A916947C1B79A98F00558C9D /* logo_csit_nu@3x.png in Resources */,
