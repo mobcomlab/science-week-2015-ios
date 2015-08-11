@@ -67,7 +67,7 @@ class QRViewController: UIViewController {
             popupConfig.showAnimation = .SlideInFromTop
             popupConfig.dismissAnimation = .SlideOutToBottom
             popupConfig.showCompletion = { popupView in
-                println("show")
+                //Show Alert
             }
             popupConfig.dismissCompletion = { popupView in
                 if self.record {

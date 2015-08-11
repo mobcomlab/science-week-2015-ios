@@ -178,7 +178,6 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
             statusMessage = "Bluetooth Status: Unknown"
         }
         
-        println(statusMessage)
     }
     
     func createPopupview() -> UIView {

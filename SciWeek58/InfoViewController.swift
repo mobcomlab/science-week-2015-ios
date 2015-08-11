@@ -15,7 +15,7 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        BProgressHUD.showMessageAutoHide(1, msg: "กำลังโหลด") { () -> Void in
+        BProgressHUD.showMessageAutoHide(2, msg: "กำลังโหลด") { () -> Void in
             let url = NSURL(string: "\(WebServiceManager.baseURLString)info")!
             self.webView.loadRequest(NSURLRequest(URL: url))
         }

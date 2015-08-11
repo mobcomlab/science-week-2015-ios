@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         setSchemaVersion(1, Realm.defaultPath, { migration, oldSchemaVersion in
@@ -29,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
         
         var navigationBarAppearace = UINavigationBar.appearance()
-        
         navigationBarAppearace.tintColor = UIColor.whiteColor()
         navigationBarAppearace.barTintColor = Style.ColorMain
         

@@ -80,7 +80,6 @@ class QuestionViewController: UIViewController {
     }
     
     func randomChoice() {
-        println("choice = \(arrayChoicesGroup?[indexQuestion])")
         
         var arrCurrentTextAnswer = [String]()
         
@@ -119,13 +118,11 @@ class QuestionViewController: UIViewController {
         
         if sender.tag == indexAnswer {
             points++
-            println("End Game points= \(points) %")
             self.checkLastQuestion()
         }
         else{
             self.checkLastQuestion()
         }
-        
     }
     
     func checkLastQuestion() {
@@ -149,7 +146,6 @@ class QuestionViewController: UIViewController {
                 //False
                 self.alertForDone()
             }
-            println("End Game percen= \(percentage) %")
         }
     }
     
@@ -170,7 +166,7 @@ class QuestionViewController: UIViewController {
         popupConfig.showAnimation = .SlideInFromTop
         popupConfig.dismissAnimation = .SlideOutToBottom
         popupConfig.showCompletion = { popupView in
-            println("show")
+            //Show Alert
         }
         popupConfig.dismissCompletion = { popupView in
             if self.record {
@@ -255,7 +251,6 @@ class QuestionViewController: UIViewController {
     }
     
     func setFont() {
-        
         if Style.DeviceType.IS_IPAD {
             
             questionLabel.font = UIFont.systemFontOfSize(40)
@@ -267,7 +262,6 @@ class QuestionViewController: UIViewController {
     }
     
     func clearText() {
-        
         questionLabel.text = "";
         self.button1.setTitle("", forState: UIControlState.Normal)
         self.button2.setTitle("", forState: UIControlState.Normal)
@@ -278,6 +272,5 @@ class QuestionViewController: UIViewController {
     func done() {
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
-
 
 }

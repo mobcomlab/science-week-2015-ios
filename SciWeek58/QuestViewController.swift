@@ -21,7 +21,6 @@ class QuestViewController: UIViewController, UICollectionViewDataSource, UIColle
     var gridSize:CGFloat = 0
     var nullSpace:CGFloat = 0
     var gridOfRows:NSInteger = 0
-    
     var quests: Results<Quest>? = nil
     
     override func viewDidLoad() {
@@ -99,7 +98,6 @@ class QuestViewController: UIViewController, UICollectionViewDataSource, UIColle
         
         self.quests = DatabaseManager.quests()
         self.collectionView?.reloadData()
-        
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -172,7 +170,6 @@ class QuestViewController: UIViewController, UICollectionViewDataSource, UIColle
         hidingNavBarManager?.shouldScrollToTop()
         var questViewController = UIViewController()
         let quest = quests![indexPath.row]
-        println(quest.answer)
         
         if quest.type == 1 {
             questViewController = self.storyboard?.instantiateViewControllerWithIdentifier("QuestionViewController") as! UIViewController

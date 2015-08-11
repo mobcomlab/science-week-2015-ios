@@ -22,12 +22,10 @@ class WebServiceManager {
         Alamofire.request(.GET, baseURLStringWithAPI+"quests", parameters: nil).responseJSON() {
             (_, _, json, error) in
             
-            //println(json?.objectForKey("data"))
             if error != nil {
                 completion(error)
                 return
             }
-
             
             let quests = ((json as! NSDictionary).valueForKey("data") as! [NSDictionary])
             let realm = Realm()
@@ -40,7 +38,5 @@ class WebServiceManager {
 
         }
     }
-    
-    
     
 }

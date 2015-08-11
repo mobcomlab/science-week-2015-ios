@@ -34,7 +34,6 @@ class QuestCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        
     }
     
 }
