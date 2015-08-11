@@ -355,7 +355,7 @@
 				TargetAttributes = {
 					A99966821B662E23008F752B = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 65PKPTRG94;
+						DevelopmentTeam = PAY24GA3J8;
 					};
 					A99966971B662E23008F752B = {
 						CreatedOnToolsVersion = 6.4;
@@ -639,7 +639,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Apptitude Co. Ltd. (PAY24GA3J8)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -687,7 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Apptitude Co. Ltd. (PAY24GA3J8)";
 				INFOPLIST_FILE = SciWeek58/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
