@@ -135,7 +135,7 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
     }
     
     func updateTextStatus(acc: Double) {
-        if acc <= 7.0 {
+        if acc <= 10.0 {
             self.textStatus.text = String(format: "%.2f m", acc)
         }
         else {
