@@ -1,29 +1,26 @@
 PODS:
-  - Alamofire (1.3.0)
+  - Alamofire (1.3.1)
   - CCMRadarView (1.0.0)
-  - KontaktSDK (6.2)
-  - Realm (0.94.0):
-    - Realm/Headers (= 0.94.0)
-  - Realm/Headers (0.94.0)
-  - RealmSwift (0.94.0):
-    - Realm (= 0.94.0)
+  - Realm (0.94.1):
+    - Realm/Headers (= 0.94.1)
+  - Realm/Headers (0.94.1)
+  - RealmSwift (0.94.1):
+    - Realm (= 0.94.1)
   - STZPopupView (1.0.1)
   - SwiftQRCode (1.0.3)
 
 DEPENDENCIES:
   - Alamofire (~> 1.3)
   - CCMRadarView (~> 1.0)
-  - KontaktSDK
   - RealmSwift
   - STZPopupView (~> 1.0)
   - SwiftQRCode (~> 1.0)
 
 SPEC CHECKSUMS:
-  Alamofire: 220403a8d5840e0b4c946a6fbaf209dbca124282
+  Alamofire: e4ab637e3195b645c814b87a652373439e59f2a4
   CCMRadarView: 29df2ff76cb5fdb2d4ebd522d7efbfd1f6a0f22f
-  KontaktSDK: f0fd26e98f2cf35f7371220857c052c83e3371e5
-  Realm: a046149653e0ca220b65b5783da907aa5b74d86c
-  RealmSwift: 5efbbf1a5c179a7237e4d428594e41619fa167ba
+  Realm: d999a6cf0b41577a077349c9cc9d496cc62a7d17
+  RealmSwift: 06b60ff5b1338755654d39aab44ac38001600f76
   STZPopupView: 0e98857143c3ac0a7fffa95caa5378b712e10b0b
   SwiftQRCode: ecbe159f53c114f9ae6ed6a5da2253c9b5a5c436
 

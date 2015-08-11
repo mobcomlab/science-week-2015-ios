@@ -8,7 +8,6 @@ target :SciWeek58 do
     pod 'SwiftQRCode', '~> 1.0'
     pod 'STZPopupView', '~> 1.0'
     pod 'CCMRadarView', '~> 1.0'
-    pod 'KontaktSDK'
 end
 
 target :SciWeek58Tests do

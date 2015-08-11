@@ -60,6 +60,14 @@
                                                         <constraint firstAttribute="centerX" secondItem="RCJ-7J-i47" secondAttribute="centerX" id="sxc-3S-jUO"/>
                                                         <constraint firstAttribute="trailing" secondItem="OpZ-8I-jR1" secondAttribute="trailing" constant="10" id="xRN-Cg-Lk7"/>
                                                     </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="Jrl-Gv-inq"/>
+                                                            <exclude reference="lso-Bm-HOY"/>
+                                                            <exclude reference="1K8-ET-Z3Y"/>
+                                                            <exclude reference="sxc-3S-jUO"/>
+                                                        </mask>
+                                                    </variation>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3Ip-WL-iVH">
                                                     <rect key="frame" x="10" y="139" width="120" height="20"/>
@@ -102,6 +110,8 @@
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="ETv-r9-oHh"/>
+                                                <exclude reference="VVs-Pm-8FW"/>
+                                                <exclude reference="shC-nW-3K4"/>
                                                 <exclude reference="LdL-OM-BtI"/>
                                                 <exclude reference="Nvl-V6-5nR"/>
                                                 <exclude reference="fdY-oQ-AZl"/>
@@ -116,7 +126,7 @@
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuestHeader" id="x59-s4-BNZ" customClass="QuestHeaderView" customModule="SciWeek58" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                    <rect key="frame" x="0.0" y="64" width="600" height="70"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;ยินดีต้อนรับสู่งานสัปดาห์วิทยาศาสตร์&quot; " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QSB-CV-3eg">
@@ -160,7 +170,9 @@
                             <constraint firstItem="RuH-W1-dS3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="l1o-Pz-N4i"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Science Week 2015" id="FfX-Z1-9CM"/>
+                    <navigationItem key="navigationItem" title="Science Week 2015" id="FfX-Z1-9CM">
+                        <barButtonItem key="backBarButtonItem" title=" " id="2bS-Pa-yUW"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="RuH-W1-dS3" id="Oaa-gk-k8g"/>
                         <segue destination="Q49-0L-6AX" kind="show" identifier="showInfo" id="QOs-mi-vnK"/>
@@ -405,7 +417,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="lFt-Jl-6O7"/>
                                                 </constraints>
-                                                <mutableString key="text">        Mobile Computing Lab เป็นห้องปฏิบัติการวิจัยภายใต้การดูแลของคณะวิทยาศาสตร์ มหาวิทยาลัยนเรศวรจังหวัดพิษณุโลก นำโดย Dr.Antony Harfield ผู้เชี่ยวชาญพิเศษด้านวิทยาการคอมพิวเตอร์และเทคโนโลยี ซึ่งมากด้วยประสบการณ์การทำงานและ การทำวิจัยด้านเทคโนโลยีมากว่า 10ปี ที่ได้พัฒนาและ ให้คำปรึกษาด้านซอฟต์แวร์และเทคโนโลยีต่างๆบนอุปกรณ์เคลื่อนที่ รวมถึงการพัฒนาแอพพลิเคชั่นบนสมาร์ทโฟนและแท็บเล็ตซึ่งงานวิจัยที่ดำเนินครอบคลุมหลายสาขา ยกตัวอย่างเช่น ด้านการศึกษา การท่องเที่ยว ชุมชนท้องถิ่น เป็นต้น</mutableString>
+                                                <string key="text">        Mobile Computing Lab เป็นห้องปฏิบัติการวิจัยภายใต้การดูแลของคณะวิทยาศาสตร์ มหาวิทยาลัยนเรศวรจังหวัดพิษณุโลก นำโดย Dr.Antony Harfield ผู้เชี่ยวชาญพิเศษด้านวิทยาการคอมพิวเตอร์และเทคโนโลยี ซึ่งมากด้วยประสบการณ์การทำงานและ การทำวิจัยด้านเทคโนโลยีมากว่า 10ปี ที่ได้พัฒนาและ ให้คำปรึกษาด้านซอฟต์แวร์และเทคโนโลยีต่างๆบนอุปกรณ์เคลื่อนที่ รวมถึงการพัฒนาแอพพลิเคชั่นบนสมาร์ทโฟนและแท็บเล็ตซึ่งงานวิจัยที่ดำเนินครอบคลุมหลายสาขา ยกตัวอย่างเช่น ด้านการศึกษา การท่องเที่ยว ชุมชนท้องถิ่น เป็นต้น</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.40506628787878785" green="0.40506628787878785" blue="0.40506628787878785" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -667,7 +679,7 @@
             </objects>
             <point key="canvasLocation" x="1524" y="1107"/>
         </scene>
-        <!--View Controller-->
+        <!--เกี่ยวกับเรา-->
         <scene sceneID="NzE-Ly-xkm">
             <objects>
                 <viewController storyboardIdentifier="QRViewController" id="kSY-7X-yPl" customClass="QRViewController" customModule="SciWeek58" customModuleProvider="target" sceneMemberID="viewController">
@@ -676,10 +688,10 @@
                         <viewControllerLayoutGuide type="bottom" id="Jia-fq-gHb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tzQ-HE-QhU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgX-e4-gJO">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgX-e4-gJO">
                                 <rect key="frame" x="10" y="10" width="580" height="740"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eQm-GS-mQa">
@@ -704,7 +716,7 @@
                                     <constraint firstAttribute="trailing" secondItem="eQm-GS-mQa" secondAttribute="trailing" constant="10" id="ziA-r3-boD"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="slY-LE-ruw">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="slY-LE-ruw">
                                 <rect key="frame" x="10" y="760" width="580" height="260"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGQuestion@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="duG-nS-T27">
@@ -792,7 +804,8 @@
                             </mask>
                         </variation>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationItem key="navigationItem" title="เกี่ยวกับเรา" id="Nmz-f4-pBS"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="descriptionTextView" destination="uA8-AW-7mr" id="3GC-R4-Vde"/>
                         <outlet property="qrPreview" destination="eQm-GS-mQa" id="J6V-8J-KXn"/>

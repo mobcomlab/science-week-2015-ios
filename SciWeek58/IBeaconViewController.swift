@@ -81,6 +81,9 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
     
     func startScanning() {
         
+        //locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
+        
         let uuid = NSUUID(UUIDString: beaconUuid)
         let beaconRegion = CLBeaconRegion(proximityUUID: uuid, major: beaconMajor, minor: beaconMinor, identifier:beaconUniqId)
         
@@ -106,6 +109,10 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
             
             updateDistance(CLProximity.Unknown, acc: 9999.0)
         }
+    }
+    
+    func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        //startScanning()
     }
     
     func updateDistance(proximity: CLProximity, acc: Double) {

@@ -13,6 +13,4 @@
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
-#import "KontaktSDK.h"
-
 #endif
