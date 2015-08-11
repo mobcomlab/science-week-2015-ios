@@ -113,7 +113,7 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
             switch proximity {
             case .Unknown:
                 self.colorStatus.backgroundColor = UIColor.grayColor()
-                self.textStatus.text = String(format: "Searching...")
+                self.textStatus.text = String(format: "ค้นหา...")
             case .Far:
                 self.colorStatus.backgroundColor = UIColor.redColor()
                 self.updateTextStatus(acc)
@@ -136,10 +136,10 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
     
     func updateTextStatus(acc: Double) {
         if acc <= 20.0 {
-            self.textStatus.text = String(format: "%.2f m", acc)
+            self.textStatus.text = String(format: "%.2f ม.", acc)
         }
         else {
-            self.textStatus.text = String(format: "Searching...")
+            self.textStatus.text = String(format: "ค้นหา...")
         }
     }
     
