@@ -14,7 +14,10 @@
 		A902B7BA1B794DAF00591024 /* BGChoice@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A902B7B91B794DAF00591024 /* BGChoice@3x.png */; };
 		A902B7BE1B79536A00591024 /* LaunchScreen@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A902B7BD1B79536A00591024 /* LaunchScreen@3x.png */; };
 		A91686DB1B790A100065503B /* BGQuestion@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A91686D81B790A100065503B /* BGQuestion@3x.png */; };
-		A92CDAA61B78C57200D20998 /* mobcom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A92CDAA51B78C57200D20998 /* mobcom@3x.png */; };
+		A916947C1B79A98F00558C9D /* logo_csit_nu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A916947A1B79A98F00558C9D /* logo_csit_nu@3x.png */; };
+		A916947D1B79A98F00558C9D /* mcl_logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A916947B1B79A98F00558C9D /* mcl_logo@3x.png */; };
+		A91694811B79CE8800558C9D /* QuestHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91694801B79CE8800558C9D /* QuestHeaderView.swift */; };
+		A91694831B79D50600558C9D /* mobcom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A91694821B79D50600558C9D /* mobcom@3x.png */; };
 		A933114E1B72FA240010B9E3 /* IBeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933114D1B72FA240010B9E3 /* IBeaconViewController.swift */; };
 		A93311501B72FA350010B9E3 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933114F1B72FA350010B9E3 /* QRViewController.swift */; };
 		A93311521B7300980010B9E3 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93311511B7300980010B9E3 /* QuestionViewController.swift */; };
@@ -70,7 +73,10 @@
 		A902B7B91B794DAF00591024 /* BGChoice@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BGChoice@3x.png"; sourceTree = "<group>"; };
 		A902B7BD1B79536A00591024 /* LaunchScreen@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen@3x.png"; sourceTree = "<group>"; };
 		A91686D81B790A100065503B /* BGQuestion@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BGQuestion@3x.png"; sourceTree = "<group>"; };
-		A92CDAA51B78C57200D20998 /* mobcom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mobcom@3x.png"; path = "../../../File/SciWeek58/Image/A/normal/mobcom@3x.png"; sourceTree = "<group>"; };
+		A916947A1B79A98F00558C9D /* logo_csit_nu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_csit_nu@3x.png"; sourceTree = "<group>"; };
+		A916947B1B79A98F00558C9D /* mcl_logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mcl_logo@3x.png"; sourceTree = "<group>"; };
+		A91694801B79CE8800558C9D /* QuestHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestHeaderView.swift; sourceTree = "<group>"; };
+		A91694821B79D50600558C9D /* mobcom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mobcom@3x.png"; sourceTree = "<group>"; };
 		A933114D1B72FA240010B9E3 /* IBeaconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBeaconViewController.swift; sourceTree = "<group>"; };
 		A933114F1B72FA350010B9E3 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		A93311511B7300980010B9E3 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 		A934E1671B6727710088B64C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A91694801B79CE8800558C9D /* QuestHeaderView.swift */,
 				A934E1641B6726480088B64C /* QuestViewController.swift */,
 				A933114D1B72FA240010B9E3 /* IBeaconViewController.swift */,
 				A933114F1B72FA350010B9E3 /* QRViewController.swift */,
@@ -201,6 +208,8 @@
 		A934E17E1B677A970088B64C /* image */ = {
 			isa = PBXGroup;
 			children = (
+				A916947A1B79A98F00558C9D /* logo_csit_nu@3x.png */,
+				A916947B1B79A98F00558C9D /* mcl_logo@3x.png */,
 				ED4D40AD1B797AAF003BE1EC /* ic-info@3x.png */,
 				ED4D40AE1B797AAF003BE1EC /* ic-more@3x.png */,
 				A902B7BD1B79536A00591024 /* LaunchScreen@3x.png */,
@@ -208,7 +217,7 @@
 				A91686D81B790A100065503B /* BGQuestion@3x.png */,
 				A902B7B51B794AD300591024 /* BottomBG@3x.png */,
 				A902B7B61B794AD300591024 /* QRFrame@3x.png */,
-				A92CDAA51B78C57200D20998 /* mobcom@3x.png */,
+				A91694821B79D50600558C9D /* mobcom@3x.png */,
 				A96467EA1B77426D00B4EC69 /* beacon@3x.png */,
 				A96467EB1B77426D00B4EC69 /* math@3x.png */,
 				A96467EC1B77426D00B4EC69 /* maze@3x.png */,
@@ -379,10 +388,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A96467F31B77426D00B4EC69 /* quest@3x.png in Resources */,
-				A92CDAA61B78C57200D20998 /* mobcom@3x.png in Resources */,
 				A902B7B71B794AD300591024 /* BottomBG@3x.png in Resources */,
 				A98BDA861B748C170022568A /* PassedIcon@3x.png in Resources */,
 				A96467EF1B77426D00B4EC69 /* beacon@3x.png in Resources */,
+				A916947D1B79A98F00558C9D /* mcl_logo@3x.png in Resources */,
 				A902B7B81B794AD300591024 /* QRFrame@3x.png in Resources */,
 				ED4D40B01B797AAF003BE1EC /* ic-more@3x.png in Resources */,
 				ED4D40AF1B797AAF003BE1EC /* ic-info@3x.png in Resources */,
@@ -393,6 +402,8 @@
 				A902B7BA1B794DAF00591024 /* BGChoice@3x.png in Resources */,
 				A96467F21B77426D00B4EC69 /* qr@3x.png in Resources */,
 				A902B7BE1B79536A00591024 /* LaunchScreen@3x.png in Resources */,
+				A916947C1B79A98F00558C9D /* logo_csit_nu@3x.png in Resources */,
+				A91694831B79D50600558C9D /* mobcom@3x.png in Resources */,
 				A96467F01B77426D00B4EC69 /* math@3x.png in Resources */,
 				A96467F11B77426D00B4EC69 /* maze@3x.png in Resources */,
 				A933115A1B7342FB0010B9E3 /* AppIcon.png in Resources */,
@@ -508,6 +519,7 @@
 			files = (
 				A934E1711B6741E30088B64C /* QuestCell.swift in Sources */,
 				A934E17C1B6776F40088B64C /* HidingNavigationBarManager.swift in Sources */,
+				A91694811B79CE8800558C9D /* QuestHeaderView.swift in Sources */,
 				A933114E1B72FA240010B9E3 /* IBeaconViewController.swift in Sources */,
 				A95C6F751B68AA58003EDBC3 /* Quest.swift in Sources */,
 				ED4D40B21B797ABA003BE1EC /* InfoViewController.swift in Sources */,

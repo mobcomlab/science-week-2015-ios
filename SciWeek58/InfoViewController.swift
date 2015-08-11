@@ -14,10 +14,10 @@ class InfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let url = NSURL(string: "\(WebServiceManager.baseURLString)info")!
-        webView.loadRequest(NSURLRequest(URL: url))
+        
+        BProgressHUD.showMessageAutoHide(1, msg: "กำลังโหลด") { () -> Void in
+            let url = NSURL(string: "\(WebServiceManager.baseURLString)info")!
+            self.webView.loadRequest(NSURLRequest(URL: url))
+        }
     }
-
-    
 }

@@ -12,12 +12,14 @@ import RealmSwift
 class WebServiceManager {
     
     //static let baseURLString = "http://sciweek.mobcomlab.com/"
-    static let baseURLString = "http://localhost:8888/api/"
-    //static let baseURLString = "http://10.31.26.37:8888/api/"
+    //static let baseURLString = "http://localhost:8888/"
+    static let baseURLString = "http://10.31.26.37:8888/"
+    
+    static let baseURLStringWithAPI = "\(baseURLString)api/"
     
     static func requestQuests(completion: ((NSError?) -> ())) {
         
-        Alamofire.request(.GET, baseURLString+"quests", parameters: nil).responseJSON() {
+        Alamofire.request(.GET, baseURLStringWithAPI+"quests", parameters: nil).responseJSON() {
             (_, _, json, error) in
             
             //println(json?.objectForKey("data"))

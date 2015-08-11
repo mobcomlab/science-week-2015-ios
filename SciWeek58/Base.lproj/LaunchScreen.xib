@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,17 +13,30 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen@3x.png" translatesAutoresizingMaskIntoConstraints="NO" id="dJd-gC-brr">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="568" id="XEY-ac-Iny"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="jQK-JV-fX4"/>
+                        <constraint firstAttribute="width" secondItem="dJd-gC-brr" secondAttribute="height" multiplier="40:71" id="oPo-fd-SXc"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="dJd-gC-brr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3zr-ni-PPo"/>
+                <constraint firstAttribute="centerY" secondItem="dJd-gC-brr" secondAttribute="centerY" id="Ehx-Hg-GV1"/>
+                <constraint firstAttribute="centerX" secondItem="dJd-gC-brr" secondAttribute="centerX" id="KrO-FF-YG3"/>
                 <constraint firstItem="dJd-gC-brr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YVc-uC-Zz2"/>
                 <constraint firstAttribute="trailing" secondItem="dJd-gC-brr" secondAttribute="trailing" id="qPq-9x-GF8"/>
                 <constraint firstAttribute="bottom" secondItem="dJd-gC-brr" secondAttribute="bottom" id="xIo-uH-SCV"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="YVc-uC-Zz2"/>
+                    <exclude reference="xIo-uH-SCV"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="545" y="832.5"/>
         </view>
     </objects>

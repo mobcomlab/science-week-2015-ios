@@ -98,7 +98,6 @@ class QuestViewController: UIViewController, UICollectionViewDataSource, UIColle
     func configureView() {
         
         self.quests = DatabaseManager.quests()
-        //println(self.quests?.count)
         self.collectionView?.reloadData()
         
     }
@@ -165,7 +164,6 @@ class QuestViewController: UIViewController, UICollectionViewDataSource, UIColle
         cell.circleView.layer.cornerRadius = (gridSize-20)/2
         cell.setGrid(quest)
         
-        
         return cell
     }
     
@@ -198,6 +196,16 @@ class QuestViewController: UIViewController, UICollectionViewDataSource, UIColle
             navigationController?.pushViewController(questViewController, animated: true )
         }
     }
+    
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+            
+            var header: QuestHeaderView?
+            
+            if kind == UICollectionElementKindSectionHeader {
+                header = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "QuestHeader", forIndexPath: indexPath) as? QuestHeaderView
+            }
+            return header!
+    }
 
     
     // MARK: Nav buttons
@@ -220,6 +228,7 @@ class QuestViewController: UIViewController, UICollectionViewDataSource, UIColle
         }))
         optionMenu.addAction(UIAlertAction(title: "ยกเลิก", style: .Cancel, handler: nil))
         
+        optionMenu.popoverPresentationController?.barButtonItem = self.navigationItem.rightBarButtonItem
         self.presentViewController(optionMenu, animated: true, completion: nil)
     }
     

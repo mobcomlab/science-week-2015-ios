@@ -101,33 +101,46 @@ class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLoc
         
         if beacons.count > 0 {
             let beacon = beacons[0] as! CLBeacon
-            if Double(beacon.accuracy) <= distance && !passed{
-                self.checkedInSuccess()
-            }
             updateDistance(beacon.proximity, acc: Double(beacon.accuracy))
         } else {
             
-            updateDistance(CLProximity.Unknown, acc: 0.0)
+            updateDistance(CLProximity.Unknown, acc: 9999.0)
         }
     }
     
-    func updateDistance(distance: CLProximity, acc: Double) {
+    func updateDistance(proximity: CLProximity, acc: Double) {
         UIView.animateWithDuration(0.8, animations: { () -> Void in
-            switch distance {
+            switch proximity {
             case .Unknown:
                 self.colorStatus.backgroundColor = UIColor.grayColor()
                 self.textStatus.text = String(format: "Searching...")
             case .Far:
                 self.colorStatus.backgroundColor = UIColor.redColor()
-                self.textStatus.text = String(format: "%.2f m", acc)
+                self.updateTextStatus(acc)
             case .Near:
                 self.colorStatus.backgroundColor = UIColor.orangeColor()
-                self.textStatus.text = String(format: "%.2f m", acc)
+                self.updateTextStatus(acc)
             case .Immediate:
                 self.colorStatus.backgroundColor = UIColor.greenColor()
-                self.textStatus.text = String(format: "%.2f m", acc)
+                self.updateTextStatus(acc)
+                
             }
         })
+        
+        if(proximity != .Unknown){
+            if acc <= distance && !passed{
+                self.checkedInSuccess()
+            }
+        }
+    }
+    
+    func updateTextStatus(acc: Double) {
+        if acc <= 7.0 {
+            self.textStatus.text = String(format: "%.2f m", acc)
+        }
+        else {
+            self.textStatus.text = String(format: "Searching...")
+        }
     }
     
     // MARK: CBPeripheralManagerDelegate method implementation
