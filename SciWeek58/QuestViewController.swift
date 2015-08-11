@@ -51,8 +51,11 @@ class QuestViewController: UIViewController, UICollectionViewDataSource, UIColle
         //Nav icon
         navigationItem.titleView = iconTitleView
         
-        var rightBarButton:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Refresh, target: self, action: "alertForReset")
-        self.navigationItem.rightBarButtonItem = rightBarButton
+        // Nav bar right
+        var infoBarButton = UIBarButtonItem(image: UIImage(named: "ic-info"), style: UIBarButtonItemStyle.Plain, target: self, action: "infoPressed")
+        self.navigationItem.leftBarButtonItem = infoBarButton
+        let moreBarButton = UIBarButtonItem(image: UIImage(named: "ic-more"), style: UIBarButtonItemStyle.Plain, target: self, action: "morePressed")
+        self.navigationItem.rightBarButtonItem = moreBarButton
         
         if Style.DeviceType.IS_IPHONE_4_OR_LESS || Style.DeviceType.IS_IPHONE_5 {
             gridSize = 140
@@ -99,55 +102,7 @@ class QuestViewController: UIViewController, UICollectionViewDataSource, UIColle
         self.collectionView?.reloadData()
         
     }
-    
-    func alertForReset() {
-        
-        let title = "กรุณายืนยัน"
-        let message = "ต้องการเริ่มเกมใหม่หรือไม่?"
-        let cancelButtonTitle = "ยกเลิก"
-        let otherButtonTitle = "เริ่มเกมใหม่"
-        
-        let alertCotroller = DOAlertController(title: title, message: message, preferredStyle: .Alert)
-        
-        // Create the actions.
-        let cancelAction = DOAlertAction(title: cancelButtonTitle, style: .Cancel) { action in
-            NSLog("Cancel.")
-        }
-        
-        let otherAction = DOAlertAction(title: otherButtonTitle, style: .Default) { action in
-            self.reset()
-        }
-        
-        // Add the actions.
-        alertCotroller.addAction(cancelAction)
-        alertCotroller.addAction(otherAction)
-        
-        presentViewController(alertCotroller, animated: true, completion: nil)
-        
-//        let alert = UIAlertView()
-//        alert.title = "กรุณายืนยัน"
-//        alert.message = "ต้องการเริ่มเกมใหม่หรือไม่?"
-//        alert.addButtonWithTitle("ยกเลิก")
-//        alert.addButtonWithTitle("เริ่มเกมใหม่")
-//        alert.cancelButtonIndex = 0
-//        alert.delegate = self
-//        alert.show()
-    }
-    
-//    func alertView(alertView: UIAlertView, didDismissWithButtonIndex buttonIndex: Int) {
-//        println("\(buttonIndex)")
-//        
-//        if (buttonIndex == 1) {
-//            self.reset()
-//        }
-//    }
-    
-    func reset() {
-        
-        DatabaseManager.resetQuest()
-        self.configureView()
-    }
-    
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -244,4 +199,60 @@ class QuestViewController: UIViewController, UICollectionViewDataSource, UIColle
         }
     }
 
+    
+    // MARK: Nav buttons
+    
+    func infoPressed() {
+        performSegueWithIdentifier("showInfo", sender: nil)
+    }
+    
+    func morePressed() {
+        let optionMenu = UIAlertController(title: nil, message: "ตัวเลือก", preferredStyle: .ActionSheet)
+        
+        optionMenu.addAction(UIAlertAction(title: "เริ่มเกมใหม่", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            self.alertForReset()
+        }))
+        optionMenu.addAction(UIAlertAction(title: "เกี่ยวกับเรา", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            self.performSegueWithIdentifier("showAbout", sender: nil)
+            
+        }))
+        optionMenu.addAction(UIAlertAction(title: "ยกเลิก", style: .Cancel, handler: nil))
+        
+        self.presentViewController(optionMenu, animated: true, completion: nil)
+    }
+    
+    
+    func alertForReset() {
+        
+        let title = "กรุณายืนยัน"
+        let message = "ต้องการเริ่มเกมใหม่หรือไม่?"
+        let cancelButtonTitle = "ยกเลิก"
+        let otherButtonTitle = "เริ่มเกมใหม่"
+        
+        let alertCotroller = DOAlertController(title: title, message: message, preferredStyle: .Alert)
+        
+        // Create the actions.
+        let cancelAction = DOAlertAction(title: cancelButtonTitle, style: .Cancel) { action in
+            NSLog("Cancel.")
+        }
+        
+        let otherAction = DOAlertAction(title: otherButtonTitle, style: .Default) { action in
+            self.resetData()
+        }
+        
+        // Add the actions.
+        alertCotroller.addAction(cancelAction)
+        alertCotroller.addAction(otherAction)
+        
+        presentViewController(alertCotroller, animated: true, completion: nil)
+    }
+    
+    func resetData() {
+        
+        DatabaseManager.resetQuest()
+        self.configureView()
+    }
+    
 }

@@ -132,6 +132,8 @@
                     <navigationItem key="navigationItem" title="Science Week 2015" id="FfX-Z1-9CM"/>
                     <connections>
                         <outlet property="collectionView" destination="RuH-W1-dS3" id="Oaa-gk-k8g"/>
+                        <segue destination="Q49-0L-6AX" kind="show" identifier="showInfo" id="QOs-mi-vnK"/>
+                        <segue destination="LzS-QX-lMD" kind="show" identifier="showAbout" id="3be-Qu-nrI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -285,6 +287,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ry-Gw-wi6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="846" y="1752"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="jqE-pg-Flv">
+            <objects>
+                <viewController id="LzS-QX-lMD" userLabel="About View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0j0-Sx-xih"/>
+                        <viewControllerLayoutGuide type="bottom" id="FHj-aM-qrp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DuW-QR-LC6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4C-Qi-IK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="2474"/>
         </scene>
         <!--Beacon View Controller-->
         <scene sceneID="64u-fC-vab">
@@ -576,6 +596,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cco-5k-XFU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133" y="1108"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="b8G-gR-at9">
+            <objects>
+                <viewController id="Q49-0L-6AX" customClass="InfoViewController" customModule="SciWeek58" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c1x-hb-9GX"/>
+                        <viewControllerLayoutGuide type="bottom" id="RbF-mt-Lmp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zTf-ma-Sji">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cC-xM-YbN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3cC-xM-YbN" firstAttribute="leading" secondItem="zTf-ma-Sji" secondAttribute="leadingMargin" constant="-16" id="K2D-Bg-nIU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3cC-xM-YbN" secondAttribute="trailing" constant="-16" id="M2L-dk-6Zs"/>
+                            <constraint firstItem="3cC-xM-YbN" firstAttribute="top" secondItem="zTf-ma-Sji" secondAttribute="topMargin" id="X1m-I9-urI"/>
+                            <constraint firstItem="RbF-mt-Lmp" firstAttribute="top" secondItem="3cC-xM-YbN" secondAttribute="bottom" id="XFj-CN-HN2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="3cC-xM-YbN" id="ulD-tM-1Xe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BL5-3l-s3B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="1890"/>
         </scene>
     </scenes>
     <resources>

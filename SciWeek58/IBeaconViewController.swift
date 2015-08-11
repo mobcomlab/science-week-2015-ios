@@ -12,7 +12,6 @@ import CoreLocation
 import CoreBluetooth
 import RealmSwift
 import STZPopupView
-import BProgressHUD
 import CCMRadarView
 
 class IBeaconViewController: UIViewController, CBPeripheralManagerDelegate,CLLocationManagerDelegate {

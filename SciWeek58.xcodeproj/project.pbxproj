@@ -46,6 +46,9 @@
 		A99966931B662E23008F752B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99966911B662E23008F752B /* LaunchScreen.xib */; };
 		A999669F1B662E23008F752B /* SciWeek58Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999669E1B662E23008F752B /* SciWeek58Tests.swift */; };
 		DEDEF866137CF8EEA6086DB1 /* Pods_SciWeek58Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC82B57C00939AB3C998F0DF /* Pods_SciWeek58Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		ED4D40AF1B797AAF003BE1EC /* ic-info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED4D40AD1B797AAF003BE1EC /* ic-info@3x.png */; };
+		ED4D40B01B797AAF003BE1EC /* ic-more@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED4D40AE1B797AAF003BE1EC /* ic-more@3x.png */; };
+		ED4D40B21B797ABA003BE1EC /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4D40B11B797ABA003BE1EC /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,9 @@
 		C3319E9039F6DD04660835A9 /* Pods-SciWeek58Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SciWeek58Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SciWeek58Tests/Pods-SciWeek58Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D3501449DB78821FB8D05B6B /* Pods-SciWeek58.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SciWeek58.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SciWeek58/Pods-SciWeek58.debug.xcconfig"; sourceTree = "<group>"; };
 		DC70E60A7939E85CDA68D9A9 /* Pods-SciWeek58Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SciWeek58Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SciWeek58Tests/Pods-SciWeek58Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED4D40AD1B797AAF003BE1EC /* ic-info@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-info@3x.png"; sourceTree = "<group>"; };
+		ED4D40AE1B797AAF003BE1EC /* ic-more@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-more@3x.png"; sourceTree = "<group>"; };
+		ED4D40B11B797ABA003BE1EC /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,7 @@
 				A933114D1B72FA240010B9E3 /* IBeaconViewController.swift */,
 				A933114F1B72FA350010B9E3 /* QRViewController.swift */,
 				A93311511B7300980010B9E3 /* QuestionViewController.swift */,
+				ED4D40B11B797ABA003BE1EC /* InfoViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +201,8 @@
 		A934E17E1B677A970088B64C /* image */ = {
 			isa = PBXGroup;
 			children = (
+				ED4D40AD1B797AAF003BE1EC /* ic-info@3x.png */,
+				ED4D40AE1B797AAF003BE1EC /* ic-more@3x.png */,
 				A902B7BD1B79536A00591024 /* LaunchScreen@3x.png */,
 				A902B7B91B794DAF00591024 /* BGChoice@3x.png */,
 				A91686D81B790A100065503B /* BGQuestion@3x.png */,
@@ -375,6 +384,8 @@
 				A98BDA861B748C170022568A /* PassedIcon@3x.png in Resources */,
 				A96467EF1B77426D00B4EC69 /* beacon@3x.png in Resources */,
 				A902B7B81B794AD300591024 /* QRFrame@3x.png in Resources */,
+				ED4D40B01B797AAF003BE1EC /* ic-more@3x.png in Resources */,
+				ED4D40AF1B797AAF003BE1EC /* ic-info@3x.png in Resources */,
 				A91686DB1B790A100065503B /* BGQuestion@3x.png in Resources */,
 				A999668E1B662E23008F752B /* Main.storyboard in Resources */,
 				A99966931B662E23008F752B /* LaunchScreen.xib in Resources */,
@@ -499,6 +510,7 @@
 				A934E17C1B6776F40088B64C /* HidingNavigationBarManager.swift in Sources */,
 				A933114E1B72FA240010B9E3 /* IBeaconViewController.swift in Sources */,
 				A95C6F751B68AA58003EDBC3 /* Quest.swift in Sources */,
+				ED4D40B21B797ABA003BE1EC /* InfoViewController.swift in Sources */,
 				A95C6F801B68C156003EDBC3 /* RealmExtensions.swift in Sources */,
 				A99966891B662E23008F752B /* AppDelegate.swift in Sources */,
 				A93311521B7300980010B9E3 /* QuestionViewController.swift in Sources */,
