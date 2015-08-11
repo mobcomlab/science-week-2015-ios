@@ -11,10 +11,8 @@ import RealmSwift
 
 class WebServiceManager {
     
-    //static let baseURLString = "http://sciweek.mobcomlab.com/"
     //static let baseURLString = "http://localhost:8888/"
-    static let baseURLString = "http://10.31.26.37:8888/"
-    
+    static let baseURLString = "http://mcl-sciweek.s3-website-ap-southeast-1.amazonaws.com/"
     static let baseURLStringWithAPI = "\(baseURLString)api/"
     
     static func requestQuests(completion: ((NSError?) -> ())) {
